@@ -34,3 +34,14 @@ body {
     color: #39a6b2;
     font-family: Helvetica, Arial, Helvetica, sans-serif;
     }
+footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+}
+footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
