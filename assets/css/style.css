@@ -54,7 +54,7 @@ header nav ul {
 }
 
 header nav ul li a {  
-  margin: 0 30px;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -80,12 +80,12 @@ header nav ul li a:hover {
 .hero {
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;  
-  background-position: center;
   background-attachment: fixed;
   background-position: 80%;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;       
+  flex-wrap: wrap; 
+  align-items: flex-start;      
 }
 
 .hero-cta {
@@ -164,7 +164,7 @@ header nav ul li a:hover {
 /* SECTION TITLE STYLES START */
 
 .section-title {
-  font-size: 55px;
+  font-size: 48px;
   color: #024e76;
   border-bottom: 3px solid;
   padding-bottom: 20px;
@@ -210,10 +210,6 @@ header nav ul li a:hover {
   border-bottom: 1px solid #39a6b2;
 }
 
-.step:nth-child(even) {
-  border-bottom: 1px solid #39a6b2;
-}
- 
 .step:last-child {
   border-bottom: none;
 }
@@ -322,7 +318,6 @@ header nav ul li a:hover {
 .contact-info > * {
   flex: 1;
   margin: 15px;
-
 }
 
 .contact-info iframe {
@@ -357,12 +352,13 @@ header nav ul li a:hover {
   margin-bottom: 15px;
   margin-top: 5px;
   border-radius: 10px;
-  background-color: rgb(2, 78, 118, 0.75)
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  background-color: rgb(2, 78, 118, 1);
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
 }
 
 .contact-form button {
@@ -429,7 +425,7 @@ footer a {
 }  
 
 /*MEDIA QUERY FOR SMALLER DESKTOPS SCREENS*/
-@media screen and (max-widht:980px) {
+@media screen and (max-width:980px) {
   /*this will be applied on any screen smaller than 980px*/
   header {
     padding-bottom: 0;
@@ -480,7 +476,7 @@ footer a {
 }  
 
 /*MEDIA QUERY FOR TABLETS AND SMALLER*/
-@media screen and (max-widht:768px) {
+@media screen and (max-width:768px) {
   /*this will be applied on any screen between 768px to 575px*/
   section {
     padding: 30px 15px;
@@ -507,10 +503,15 @@ footer a {
   .step-text {
     flex: 100%;
   }
+
+  .trainer-bio h3,
+  .trainer-bio h4 {
+    display: block;
+  }
 }
 
 /*MEDIA QUERIE FOR MOBILE PHONES AND SMALLER*/
-@media screen and (max-widht:575px) {
+@media screen and (max-width:575px) {
   /*this will be applied on any screen smaller than 575px*/
 
   .hero-form button {
