@@ -490,9 +490,9 @@ footer a {
 }  
 
 /*MEDIA QUERY FOR SMALLER DESKTOPS SCREENS*/
+/*this will be applied on any screen smaller than 980px*/
 @media screen and (max-width:980px) {
-  /*this will be applied on any screen smaller than 980px*/
-  header {
+    header {
     padding-bottom: 0;
     justify-content: center;
     position: relative;    
@@ -541,8 +541,8 @@ footer a {
 }  
 
 /*MEDIA QUERY FOR TABLETS AND SMALLER*/
+    /*this will be applied on any screen between 768px to 575px*/
 @media screen and (max-width:768px) {
-  /*this will be applied on any screen between 768px to 575px*/
   section {
     padding: 30px 15px;
   }
@@ -576,9 +576,9 @@ footer a {
 }
 
 /*MEDIA QUERIE FOR MOBILE PHONES AND SMALLER*/
+ /*this will be applied on any screen smaller than 575px*/
 @media screen and (max-width:575px) {
-  /*this will be applied on any screen smaller than 575px*/
-
+ 
   .hero-form button {
     width: 100%;
   }
